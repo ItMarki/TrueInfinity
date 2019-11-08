@@ -65,19 +65,19 @@ class Game {
 	get disp_time() {
 		let time = new Date() - this.starttime;
 		if (time < 60000) {
-			return (Math.floor(time / 1000)).toString() + ' seconds';
+			return (Math.floor(time / 1000)).toString() + '秒';
 		} else if (time < 3600000) {
-			return (Math.floor(time / 60000)).toString() + ' minutes';
+			return (Math.floor(time / 60000)).toString() + '分鐘';
 		} else if (time < 86400000) {
-			return (Math.floor(time / 3600000)).toString() + ' hours';
+			return (Math.floor(time / 3600000)).toString() + '小時';
 		} else if (time < 604800000) {
-			return (Math.floor(time / 86400000)).toString() + ' days';
+			return (Math.floor(time / 86400000)).toString() + '天';
 		} else if (time < 2592000000) {
-			return (Math.floor(time / 604800000)).toString() + ' weeks';
+			return (Math.floor(time / 604800000)).toString() + '星期';
 		} else if (time < 31536000000) {
-			return (Math.floor(time / 2592000000)).toString() + ' months';
+			return (Math.floor(time / 2592000000)).toString() + '月';
 		} else {
-			return (Math.floor(time / 31536000000)).toString() + ' years';
+			return (Math.floor(time / 31536000000)).toString() + '年';
 		}
 	}
 	
