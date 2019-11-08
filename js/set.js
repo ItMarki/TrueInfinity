@@ -3,10 +3,10 @@ function setElems() {
 		let p = game.prestige[p2];
 		if (p.str_loc != joa([0])) {
 			setElem('r' + JSON.stringify(p.loc), `
-				你擁有 ${f(p.points)} ${getLayerName(p.loc)} 點和 ${f(p.power)} ${getLayerName(p.loc)} 力量
+				你擁有 ${f(p.points)} ${getLayerName(p.loc)} 點數和 ${f(p.power)} ${getLayerName(p.loc)} 力量
 			`);
 			setElem('r2' + JSON.stringify(p.loc), `
-				你擁有 ${f(p.points)} ${getLayerName(p.loc)} 點和 ${f(p.power)} ${getLayerName(p.loc)} 力量
+				你擁有 ${f(p.points)} ${getLayerName(p.loc)} 點數和 ${f(p.power)} ${getLayerName(p.loc)} 力量
 			`);
 		} else {
 			setElem('r' + JSON.stringify(p.loc), `
@@ -23,26 +23,26 @@ function setElems() {
 		}
 		if (game.state == 0 || p.str_loc == JSON.stringify(game.max_layer)) {
 			setElem('pb' + JSON.stringify(p.loc), `
-				Prestige for: ${f(getPrestigeGain(p.points).mul(10))} ${getLayerName(p.next_loc)} points
+				聲望得到：${f(getPrestigeGain(p.points).mul(10))} ${getLayerName(p.next_loc)} 點數
 			`);
 		} else if (game.state == 1){
 			let diff = game.max_layer[0] - p.loc[0];
 			setElem('pb' + JSON.stringify(p.loc), `
-				Prestige for: ${f(getPrestigeGain2(p.points, diff).mul(10))} ${getLayerName(game.max_layer)} points
+				聲望得到：${f(getPrestigeGain2(p.points, diff).mul(10))} ${getLayerName(game.max_layer)} 點數
 			`);
 		}
 		for (let g of p.dims) {
 			if (p.str_loc != '[0]') {
 				setElem('t' + JSON.stringify(g.loc) + JSON.stringify(g.id), `
-					${getLayerName(g.loc).replace(/(^|[\s-])\S/g, function (match) {return match.toUpperCase()})} Dimension ${f(g.dim.add(1))}<br>
+					${getLayerName(g.loc).replace(/(^|[\s-])\S/g, function (match) {return match.toUpperCase()})} 維度 ${f(g.dim.add(1))}<br>
 					${f(g.amount)} x${f(g.mult)}<br>
 					Cost: ${f(g.price)}
 				`);
 			} else {
 				setElem('t' + JSON.stringify(g.loc) + JSON.stringify(g.id), `
-				Dimension ${f(g.dim.add(1))}<br>
+				維度 ${f(g.dim.add(1))}<br>
 				${f(g.amount)} x${f(g.mult)}<br>
-				Cost: ${f(g.price)}
+				成本：${f(g.price)}
 			`);
 			}
 		}
