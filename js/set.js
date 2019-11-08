@@ -3,10 +3,10 @@ function setElems() {
 		let p = game.prestige[p2];
 		if (p.str_loc != joa([0])) {
 			setElem('r' + JSON.stringify(p.loc), `
-				你擁有 ${f(p.points)} ${getLayerName(p.loc)} 點數和 ${f(p.power)} ${getLayerName(p.loc)} 力量
+				你擁有 ${f(p.points)} ${getLayerName(p.loc)}點數和 ${f(p.power)} ${getLayerName(p.loc)}力量
 			`);
 			setElem('r2' + JSON.stringify(p.loc), `
-				你擁有 ${f(p.points)} ${getLayerName(p.loc)} 點數和 ${f(p.power)} ${getLayerName(p.loc)} 力量
+				你擁有 ${f(p.points)} ${getLayerName(p.loc)}點數和 ${f(p.power)} ${getLayerName(p.loc)}力量
 			`);
 		} else {
 			setElem('r' + JSON.stringify(p.loc), `
@@ -36,7 +36,7 @@ function setElems() {
 				setElem('t' + JSON.stringify(g.loc) + JSON.stringify(g.id), `
 					${getLayerName(g.loc).replace(/(^|[\s-])\S/g, function (match) {return match.toUpperCase()})} 維度 ${f(g.dim.add(1))}<br>
 					${f(g.amount)} x${f(g.mult)}<br>
-					Cost: ${f(g.price)}
+					成本：${f(g.price)}
 				`);
 			} else {
 				setElem('t' + JSON.stringify(g.loc) + JSON.stringify(g.id), `
