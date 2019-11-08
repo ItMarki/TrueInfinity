@@ -59,32 +59,32 @@ function toggleSB() {
 	document.getElementById('sidebar').classList.toggle('expanded');
 	document.getElementById('toggleSB').innerHTML = document.getElementById('toggleSB').innerHTML == '&gt;&gt;' ? '&lt;&lt;' : '&gt;&gt;';
 	if (document.getElementById('mt0').innerHTML == 'Di') {
-		setTimeout(() => document.getElementById('mt0').innerHTML = 'Dimensions', 300);
+		setTimeout(() => document.getElementById('mt0').innerHTML = '維度', 300);
 	} else {
-		setTimeout(() => document.getElementById('mt0').innerHTML = 'Di', 200);
+		setTimeout(() => document.getElementById('mt0').innerHTML = '維', 200);
 	}
 	if (document.getElementById('mt1').innerHTML == 'Op') {
-		setTimeout(() => document.getElementById('mt1').innerHTML = 'Options', 300);
+		setTimeout(() => document.getElementById('mt1').innerHTML = '選項', 300);
 	} else {
-		setTimeout(() => document.getElementById('mt1').innerHTML = 'Op', 200);
+		setTimeout(() => document.getElementById('mt1').innerHTML = '選', 200);
 	}
 	if (document.getElementById('mt2').innerHTML == 'St') {
-		setTimeout(() => document.getElementById('mt2').innerHTML = 'Statistics', 300);
+		setTimeout(() => document.getElementById('mt2').innerHTML = '統計', 300);
 	} else {
-		setTimeout(() => document.getElementById('mt2').innerHTML = 'St', 200);
+		setTimeout(() => document.getElementById('mt2').innerHTML = '統', 200);
 	}
 	if (document.getElementById('mt3').innerHTML == 'Ac') {
-		setTimeout(() => document.getElementById('mt3').innerHTML = 'Achievements', 300);
+		setTimeout(() => document.getElementById('mt3').innerHTML = '成就', 300);
 	} else {
-		setTimeout(() => document.getElementById('mt3').innerHTML = 'Ac', 200);
+		setTimeout(() => document.getElementById('mt3').innerHTML = '成', 200);
 	}
 	if (document.getElementById('mt4').innerHTML == 'Au') {
-		setTimeout(() => document.getElementById('mt4').innerHTML = 'Automation', 300);
+		setTimeout(() => document.getElementById('mt4').innerHTML = '自動', 300);
 	} else {
-		setTimeout(() => document.getElementById('mt4').innerHTML = 'Au', 200);
+		setTimeout(() => document.getElementById('mt4').innerHTML = '自', 200);
 	}
 	if (document.getElementById('credit').innerHTML == '') {
-		setTimeout(() => document.getElementById('credit').innerHTML = 'Lock icon made by <a href=\'https://www.flaticon.com/authors/smashicons\'>Smashicons</a> from <a href=\'https://www.flaticon.com\'>www.flaticon.com</a><br>Favicon made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a>', 300);
+		setTimeout(() => document.getElementById('credit').innerHTML = '鎖符號由<a href=\'https://www.flaticon.com/authors/smashicons\'>Smashicons</a>製造，從<a href=\'https://www.flaticon.com\'>www.flaticon.com</a><br>Favicon由<a href="https://www.flaticon.com/authors/freepik">Freepik</a>製造，從<a href="https://www.flaticon.com/">www.flaticon.com</a>', 300);
 	} else {
 		setTimeout(() => document.getElementById('credit').innerHTML = '', 200);
 	}
