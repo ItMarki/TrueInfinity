@@ -3,17 +3,17 @@ function setElems() {
 		let p = game.prestige[p2];
 		if (p.str_loc != joa([0])) {
 			setElem('r' + JSON.stringify(p.loc), `
-				You have ${f(p.points)} ${getLayerName(p.loc)} points and ${f(p.power)} ${getLayerName(p.loc)} power
+				你擁有 ${f(p.points)} ${getLayerName(p.loc)} 點和 ${f(p.power)} ${getLayerName(p.loc)} 力量
 			`);
 			setElem('r2' + JSON.stringify(p.loc), `
-				You have ${f(p.points)} ${getLayerName(p.loc)} points and ${f(p.power)} ${getLayerName(p.loc)} power
+				你擁有 ${f(p.points)} ${getLayerName(p.loc)} 點和 ${f(p.power)} ${getLayerName(p.loc)} 力量
 			`);
 		} else {
 			setElem('r' + JSON.stringify(p.loc), `
-				You have ${f(p.points)} antimatter
+				你擁有 ${f(p.points)} 反物質
 			`);
 			setElem('r2' + JSON.stringify(p.loc), `
-				You have ${f(p.points)} antimatter
+				你擁有 ${f(p.points)} 反物質
 			`);
 		}
 		if (getPrestigeGain(p.points).gt(0) || getPrestigeGain2(p.points, game.max_layer[0] - p.loc[0]).gt(0)) {
