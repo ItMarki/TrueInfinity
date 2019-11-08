@@ -2,7 +2,7 @@ function createLayer(loc) {
 	let p = createDiv('layerswrapper', 'p' + JSON.stringify(loc), 'p');
 	let r = createResBox(loc);
 	let m = createElem('p' + JSON.stringify(loc), 'm' + JSON.stringify(loc), 'button', 'maxall sbb green');
-	m.innerHTML = 'Max All';
+	m.innerHTML = '全部最大';
 	m.onclick = () => {maxAll(loc)};
 	let br = createElem('p' + JSON.stringify(loc), '', 'br');
 	let pb = createElem('p' + JSON.stringify(loc), 'pb' + JSON.stringify(loc), 'button', 'pb sbb blue');
