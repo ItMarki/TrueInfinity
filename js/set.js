@@ -34,7 +34,7 @@ function setElems() {
 		for (let g of p.dims) {
 			if (p.str_loc != '[0]') {
 				setElem('t' + JSON.stringify(g.loc) + JSON.stringify(g.id), `
-					${getLayerName(g.loc).replace(/(^|[\s-])\S/g, function (match) {return match.toUpperCase()})} 維度 ${f(g.dim.add(1))}<br>
+					${getLayerName(g.loc).replace(/(^|[\s-])\S/g, function (match) {return match.toUpperCase()})}維度 ${f(g.dim.add(1))}<br>
 					${f(g.amount)} x${f(g.mult)}<br>
 					成本：${f(g.price)}
 				`);
