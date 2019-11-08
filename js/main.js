@@ -9,7 +9,7 @@ function save() {
 // Clear the save file
 function wipe(nc) {
 	if (!nc) {
-		if (confirm('Do you want to delete ALL of your progress?!?')) {
+		if (confirm('你想不想要重置全部進度？！？')) {
 			clearAll();
 			game = new Game();
 			firstTime();
@@ -64,7 +64,7 @@ function exp() {
 
 // Import a save file
 function imp() {
-	let b64 = prompt('Enter a save file: ');
+	let b64 = prompt('請輸入存檔：');
 	let c = true;
 	if (b64 == null) {
 		c = false;
@@ -77,7 +77,7 @@ function imp() {
 		alert(e);
 	}
 	if (c) {
-		if (confirm('Are you sure? This will override your current progress!')) {
+		if (confirm('你確不確定？這樣會複寫你現在的進度！')) {
 			clearAll();
 			game = new Game(JSON.parse(json));
 			save();
