@@ -265,24 +265,24 @@ function getMult(loc) {
 }
 
 const NAMES = [
-	'infinity', 
-	'eternity', 
-	'reality', 
-	'equality', 
-	'affinity', 
-	'celerity',
-	'identity', 
-	'vitality', 
-	'immunity', 
-	'atrocity', 
-	'immensity', 
-	'severity', 
-	'fatality', 
-	'insanity', 
-	'calamity', 
-	'futility', 
-	'finality', 
-	'unity'
+	'無限', 
+	'永恆', 
+	'現實', 
+	'平等', 
+	'意合', 
+	'速度',
+	'自我', 
+	'活力', 
+	'免疫', 
+	'兇惡', 
+	'廣大', 
+	'嚴重', 
+	'死亡', 
+	'狂氣', 
+	'災難', 
+	'無效', 
+	'終結', 
+	'統一'
 ];
 
 function getLayerName(loc) {
