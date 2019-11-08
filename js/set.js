@@ -63,9 +63,9 @@ function setElems() {
 	// Statistics
 	
 	setElem('stats', `
-		You have ${f(game.prestige[joa([0])].points)} antimatter<br>
-		Your best prestige layer is ${JSON.stringify(game.max_layer) == joa([0]) ? '...oh, you haven\'t prestiged yet' : getLayerName(game.max_layer)}<br>
-		You have played for ${game.disp_time}
+		你擁有 ${f(game.prestige[joa([0])].points)} antimatter<br>
+		你最好的聲望層次是 ${JSON.stringify(game.max_layer) == joa([0]) ? '……噢，你還沒有聲望' : getLayerName(game.max_layer)}<br>
+		你的遊玩時間是 ${game.disp_time}
 	`);
 	
 	// Automation Unlock
