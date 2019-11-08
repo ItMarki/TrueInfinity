@@ -125,8 +125,8 @@ function setElems() {
 	for (let p2 in game.prestige) {
 		let p = game.prestige[p2];
 		setElem('ama' + JSON.stringify(p.loc), `
-			Unlock Auto Max All<br>
-			Cost: ${f(auto_max_cost(p.loc))} ${JSON.stringify(p.loc) == '[0]' ? 'Antimatter' : getLayerName(p.loc).replace(/(^|[\s-])\S/g, function (match) {return match.toUpperCase()}) + ' Points'}
+			解鎖自動購買最大<br>
+			成本：${f(auto_max_cost(p.loc))} ${JSON.stringify(p.loc) == '[0]' ? 'Antimatter' : getLayerName(p.loc).replace(/(^|[\s-])\S/g, function (match) {return match.toUpperCase()}) + '點數'}
 		`);
 		if (p.is_auto_max) {
 			document.getElementById('ama' + JSON.stringify(p.loc)).className = document.getElementById('ama' + JSON.stringify(p.loc)).className.replace('red', 'blue').replace('green', 'blue');
@@ -138,11 +138,11 @@ function setElems() {
 			}
 		}
 		
-		setElem('autoauto', `Automate Purchasing of Automation: ${f('eee100')}`);
+		setElem('autoauto', `自動化自動的購買：${f('eee100')}`);
 		
 		setElem('ap' + JSON.stringify(p.loc), `
-			Unlock Auto Prestige Gain<br>
-			Cost: ${f(auto_prestige_cost(p.loc))} ${JSON.stringify(p.loc) == '[0]' ? 'Antimatter' : getLayerName(p.loc).replace(/(^|[\s-])\S/g, function (match) {return match.toUpperCase()}) + ' Points'}
+			解鎖自動聲望獲得<br>
+			成本：${f(auto_prestige_cost(p.loc))} ${JSON.stringify(p.loc) == '[0]' ? 'Antimatter' : getLayerName(p.loc).replace(/(^|[\s-])\S/g, function (match) {return match.toUpperCase()}) + '點數'}
 		`);
 		if (p.is_auto_prestige) {
 			document.getElementById('ap' + JSON.stringify(p.loc)).className = document.getElementById('ap' + JSON.stringify(p.loc)).className.replace('red', 'blue').replace('green', 'blue');
