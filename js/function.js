@@ -58,27 +58,27 @@ function removeElem(thisId) {
 function toggleSB() {
 	document.getElementById('sidebar').classList.toggle('expanded');
 	document.getElementById('toggleSB').innerHTML = document.getElementById('toggleSB').innerHTML == '&gt;&gt;' ? '&lt;&lt;' : '&gt;&gt;';
-	if (document.getElementById('mt0').innerHTML == 'Di') {
+	if (document.getElementById('mt0').innerHTML == '維') {
 		setTimeout(() => document.getElementById('mt0').innerHTML = '維度', 300);
 	} else {
 		setTimeout(() => document.getElementById('mt0').innerHTML = '維', 200);
 	}
-	if (document.getElementById('mt1').innerHTML == 'Op') {
+	if (document.getElementById('mt1').innerHTML == '選') {
 		setTimeout(() => document.getElementById('mt1').innerHTML = '選項', 300);
 	} else {
 		setTimeout(() => document.getElementById('mt1').innerHTML = '選', 200);
 	}
-	if (document.getElementById('mt2').innerHTML == 'St') {
+	if (document.getElementById('mt2').innerHTML == '統') {
 		setTimeout(() => document.getElementById('mt2').innerHTML = '統計', 300);
 	} else {
 		setTimeout(() => document.getElementById('mt2').innerHTML = '統', 200);
 	}
-	if (document.getElementById('mt3').innerHTML == 'Ac') {
+	if (document.getElementById('mt3').innerHTML == '成') {
 		setTimeout(() => document.getElementById('mt3').innerHTML = '成就', 300);
 	} else {
 		setTimeout(() => document.getElementById('mt3').innerHTML = '成', 200);
 	}
-	if (document.getElementById('mt4').innerHTML == 'Au') {
+	if (document.getElementById('mt4').innerHTML == '自') {
 		setTimeout(() => document.getElementById('mt4').innerHTML = '自動', 300);
 	} else {
 		setTimeout(() => document.getElementById('mt4').innerHTML = '自', 200);
