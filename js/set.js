@@ -23,12 +23,12 @@ function setElems() {
 		}
 		if (game.state == 0 || p.str_loc == JSON.stringify(game.max_layer)) {
 			setElem('pb' + JSON.stringify(p.loc), `
-				聲望得到：${f(getPrestigeGain(p.points).mul(10))} ${getLayerName(p.next_loc)} 點數
+				聲望得到：${f(getPrestigeGain(p.points).mul(10))} ${getLayerName(p.next_loc)}點數
 			`);
 		} else if (game.state == 1){
 			let diff = game.max_layer[0] - p.loc[0];
 			setElem('pb' + JSON.stringify(p.loc), `
-				聲望得到：${f(getPrestigeGain2(p.points, diff).mul(10))} ${getLayerName(game.max_layer)} 點數
+				聲望得到：${f(getPrestigeGain2(p.points, diff).mul(10))} ${getLayerName(game.max_layer)}點數
 			`);
 		}
 		for (let g of p.dims) {
