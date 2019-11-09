@@ -55,10 +55,10 @@ function exp() {
 	try {
 		document.execCommand('copy');
 		output.blur();
-		alert('Save copied to clipboard');
+		alert('存檔成功複製到剪貼簿');
 	} catch(e) {
 		console.warn(e);
-		alert('Failed to copy to clipboard');
+		alert('存檔失敗複製到剪貼簿');
 	}
 }
 
