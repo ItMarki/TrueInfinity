@@ -36,7 +36,7 @@ function createGenerator(dim, loc, index) {
 	let b = createElem('g' + JSON.stringify(loc) + JSON.stringify(o.id), 'b' + JSON.stringify(loc) + JSON.stringify(o.id), 'button', 'gb sbb green height half');
 	b.innerHTML = '購買';
 	let b2 = createElem('g' + JSON.stringify(loc) + JSON.stringify(o.id), 'b2' + JSON.stringify(loc) + JSON.stringify(o.id), 'button', 'gb sbb green height half');
-	b2.innerHTML = '購買最多';
+	b2.innerHTML = '購買最大';
 	hide(b.id);
 	hide(b2.id);
 	
