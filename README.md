@@ -1,10 +1,7 @@
-# TrueInfinity
+# 真無限
 
-Infinite Layers isn't even infinite! You could only have like 150 prestige layers before it got too laggy. It stores all the info
-for every dimension in every prestige layer. In True Infinity it won't be limited like that and you will be able to get somewhere
-like {10, 2, 1000} of a resource (BEAF).
+無限層次真的不是無限！你可以有150聲望層次才能有延遲。它將全部維度的資料儲存在每一個聲望層次。真無限不會這樣限制，讓你得到大約 {10, 2, 1000}個資源（BEAF）。
 
-Not only that but there will be layers of prestige layers, and layers of layers of prestige layers and layers of layers of 
-(... 1000x layers of) layers of prestige layers.
+不僅這樣，但是會有聲望層次的層次，和聲望層次的層次的層次，還有聲望層次的層次的層次（1000次）的層次的層次。
 
-Let's see how far I get before I get bored ;)
+看看有多遠，我才能悶：）
